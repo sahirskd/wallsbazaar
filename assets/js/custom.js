@@ -1217,7 +1217,7 @@ async function submitLeadFormDetails(form) {
         "address": form.address.value
     });
 
-    let response = await fetch("http://localhost:3000/api/wallsbazaar-users", {
+    let response = await fetch("https://sahir-portfolio-nextjs.vercel.app/api/wallsbazaar-users", {
         method: "POST",
         body: bodyContent,
     });
