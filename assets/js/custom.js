@@ -1220,6 +1220,11 @@ async function submitLeadFormDetails(form) {
         body: bodyContent,
     });
     console.log(response);
+
+    setTimeout(() => {
+        $('#centerLeadModalForm').modal('hide');
+    }, 2000);
+    // $('#success-section-lead-form').fadeIn();
     $("#lead_form_details").trigger("reset");
     return false;
 }
