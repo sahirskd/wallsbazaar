@@ -1208,8 +1208,6 @@ $("#lead_form_details").submit((e) => {
 
 async function submitLeadFormDetails(form) {
 
-    debugger
-
     let bodyContent = JSON.stringify({
         "name": form.name.value,
         "email": form.email.value,
